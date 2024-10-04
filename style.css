@@ -193,6 +193,8 @@ footer {
     padding: 20px;
     max-width: 300px;
     text-align: left;
+    flex: 1 1 300px; /* Se ajusta a mínimo 300px, pero puede crecer */
+    box-sizing: border-box;
 }
 
 .team-member img {
