@@ -74,7 +74,7 @@ header {
 }
 
 .hero {
-    background: url('Imagenes/equipo.jpg') no-repeat center center; /* Centra la imagen */
+    background: url('equipo.jpg') no-repeat center center; /* Centra la imagen */
     background-size: cover; /* Asegura que la imagen cubra toda la sección */
     color: white;
     padding: 180px 20px; /* Aumenta el padding superior para bajar la sección */
