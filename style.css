@@ -50,6 +50,27 @@ header {
     color: #00aaff; /* Azul claro para hover */
 }
 
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #00aaff; /* Azul claro para hover */
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -88,7 +109,6 @@ header {
 .nav-links.open {
     display: flex;
 }
-
 
 .logo  {
     display: flex; /* Permite alinear los elementos horizontalmente */
