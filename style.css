@@ -1,0 +1,418 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho total */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #adcee9; /* Fondo azul claro similar al agua */
+    color: #333;
+    margin-top: 80px; /* Ajusta este valor según la altura de tu header */
+}
+
+header {
+    background-color: #004080; /* Azul marino */
+    color: #fff;
+    padding: 20px;
+    position: fixed; /* Mantiene el header fijo en la parte superior */
+    top: 0; /* Posición desde la parte superior */
+    left: 0; /* Posición desde la izquierda */
+    width: 100%; /* Asegura que el header ocupe todo el ancho */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: #00aaff; /* Azul claro para hover */
+}
+
+.logo  {
+    display: flex; /* Permite alinear los elementos horizontalmente */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.logo img {
+    width: 50px; /* Ajusta el tamaño según necesites */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.logo-text h1 {
+    margin: 0; /* Elimina el margen por defecto */
+    font-size: 24px; /* Tamaño de la fuente del título */
+    color: white; /* Color del texto */
+}
+
+.logo-text h2 {
+    margin: 0; /* Elimina el margen por defecto */
+    font-size: 12px; /* Tamaño de la fuente del subtítulo */
+    color: #e1e8eb; /* Color del subtítulo (azul claro) */
+}
+
+.hero {
+    background: url('Imagenes/equipo.jpg') no-repeat center center; /* Centra la imagen */
+    background-size: cover; /* Asegura que la imagen cubra toda la sección */
+    color: white;
+    padding: 180px 20px; /* Aumenta el padding superior para bajar la sección */
+    text-align: center;
+}
+
+.hero h2 {
+    margin-bottom: 5px; /* Reduce el espacio debajo del título */
+}
+
+.hero p {
+    margin-bottom: 20px; /* Reduce el espacio debajo del párrafo */
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.hero .btn {
+    margin-top: 10px; /* Reduce el espacio encima del botón */
+    padding: 10px 20px; /* Ajusta el padding del botón para que sea más compacto */
+    background-color: #00aaff; /* Botón azul claro */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background-color: #005f99; /* Botón más oscuro al hacer hover */
+}
+
+.info-section {
+    padding: 50px 20px;
+    text-align: center;
+    scroll-margin-top: 80px;
+}
+
+.info-section h2 {
+    font-size: 28px;
+    color: #004080;
+    font-family: cursive;
+}
+
+.info-section p {
+    font-family: 'Georgia', serif; /* Fuente elegante */
+    font-size: 20px; /* Tamaño de fuente más grande */
+    line-height: 1.6; /* Espaciado entre líneas */
+    color: #004080; /* Color azul marino */
+    background-color: #f0f8ff; /* Fondo azul claro */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.534); /* Sombra para darle profundidad */
+    margin: 20px auto; /* Centra el párrafo horizontalmente */
+    max-width: auto; /* Ancho máximo del párrafo */
+}
+
+footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.ice-text {
+    font-family: 'Arial', sans-serif;
+    font-size: 5rem;
+    color: #0ce0fc;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.575), 
+                 0 0 20px rgba(255, 255, 255, 0.39), 
+                 0 0 30px rgba(255, 255, 255, 0.123);
+    background: linear-gradient(to bottom, #e0eefa, #80deea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nosotros_class video {
+    display: block;
+    margin: 20px auto; /* Centra el video horizontalmente */
+    border: 2px solid #004080; /* Añade un borde azul marino */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.funcionalidad_class video {
+    display: block;
+    margin: 20px auto; /* Centra el video horizontalmente */
+    border: 2px solid #004080; /* Añade un borde azul marino */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.team-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f0f8ff; /* Fondo azul claro */
+    scroll-margin-top: 80px;
+}
+
+.team-section h2 {
+    font-size: 32px;
+    color: #004080; /* Azul marino */
+    margin-bottom: 40px;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-member {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.team-member h3 {
+    font-size: 24px;
+    color: #004080;
+    margin-top: 10px;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+
+
+.funcionalidad-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #e0e7fa; /* Fondo azul claro */
+    color: #004d40; /* Texto verde oscuro */
+    border-radius: 15px; /* Bordes más redondeados */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+    margin: 20px auto; /* Centra la sección horizontalmente */
+    max-width: 800px; /* Ancho máximo de la sección */
+    transition: transform 0.3s ease;
+    scroll-margin-top: 80px;
+}
+
+.funcionalidad-section:hover {
+    transform: scale(1.02); /* Efecto de agrandamiento al hacer hover */
+}
+
+.donaciones-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f0f8ff; /* Fondo azul claro */
+    color: #004080; /* Texto azul marino */
+    border-radius: 15px; /* Bordes más redondeados */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+    margin: 20px auto; /* Centra la sección horizontalmente */
+    max-width: 800px; /* Ancho máximo de la sección */
+    transition: transform 0.5s ease; /* Transición para el efecto hover */
+    scroll-margin-top: 80px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.donaciones-section:hover {
+    transform: scale(1.02); /* Efecto de agrandamiento al hacer hover */
+}
+
+.donaciones-section h2 {
+    font-size: 36px; /* Tamaño de fuente más grande */
+    margin-bottom: 25px; /* Espacio inferior mayor */
+    color: #002f5f; /* Color de texto más oscuro */
+}
+
+.moving-label-container {
+    overflow: visible; /* Permite que el texto se expanda más allá de los límites del contenedor */
+    height: auto; /* Ajusta automáticamente la altura según el contenido */
+    margin-bottom: 25px; /* Espacio inferior mayor */
+    position: relative;
+    transition: opacity 0.5s ease;
+}
+
+.moving-label {
+    display: block; /* Cambia de flex a block para que los textos no se superpongan */
+    position: relative; /* No más animaciones de movimiento */
+}
+
+.moving-label span {
+    font-size: 20px; /* Tamaño de fuente más grande */
+    line-height: 1.5; /* Altura de línea ajustada */
+    color: #004080;
+    opacity: 1; /* Asegura que siempre esté visible */
+    transition: opacity 0.5s ease;
+}
+
+
+@keyframes moveLabel {
+    0% { top: 0; }
+    33% { top: -50px; }
+    66% { top: -100px; }
+    100% { top: 0; }
+}
+
+.donation-btn {
+    display: inline-block;
+    padding: 12px 25px; /* Tamaño de botón más grande */
+    background-color: #004080; /* Botón azul marino */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px; /* Bordes más redondeados */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición para el efecto hover */
+}
+
+.donation-btn:hover {
+    background-color: #002f5f; /* Botón más oscuro al hacer hover */
+    transform: translateY(-2px); /* Efecto de elevación al hacer hover */
+}
+
+/* Estilo para la información desplegable */
+.support-info {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9; /* Fondo gris claro */
+    border: 1px solid #ccc; /* Borde suave */
+    border-radius: 10px; /* Bordes redondeados */
+    color: #004080;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Estilos generales para la sección de contacto */
+.contacto-section {
+    padding: 60px 20px;
+    background-color: #f0f8ff; /* Fondo azul claro */
+    color: #004080;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 900px; /* Ancho máximo de la sección */
+    scroll-margin-top: 80px;
+
+}
+
+/* Estilos generales para la sección de contacto */
+.contacto-section {
+    padding: 60px 20px;
+    background-color: #f0f8ff;
+    color: #004080;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 900px;
+    scroll-margin-top: 80px;
+}
+
+/* Estilos para el formulario de contacto */
+.contact-form {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #004080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #002f5f;
+}
+
+/* Estilos para el mapa de contacto */
+.contact-details-map {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details-map h3 {
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #004080;
+    text-decoration: none;
+}
+
+contact-info a:hover {
+    text-decoration: underline;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
