@@ -50,6 +50,46 @@ header {
     color: #00aaff; /* Azul claro para hover */
 }
 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #007BFF;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+.nav-links.open {
+    display: flex;
+}
+
+
 .logo  {
     display: flex; /* Permite alinear los elementos horizontalmente */
     align-items: center; /* Centra verticalmente los elementos */
