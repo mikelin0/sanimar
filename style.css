@@ -95,6 +95,7 @@ header {
 
 .nav-links.open {
     display: flex;
+    flex-direction: column;
 }
 
 /* Estilos para el logo */
