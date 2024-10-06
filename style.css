@@ -212,12 +212,40 @@ footer {
     -webkit-text-fill-color: transparent;
 }
 
-.nosotros_class video {
-    display: block;
-    margin: 20px auto; /* Centra el video horizontalmente */
-    border: 2px solid #004080; /* Añade un borde azul marino */
-    border-radius: 10px; /* Bordes redondeados */
+.video-container {
+    position: relative;
+    text-align: center;
+    margin: 20px auto;
+    width: 600px; /* Ajusta el tamaño del contenedor según el tamaño de tu imagen */
 }
+
+.video-legend {
+    position: absolute;
+    top: -30px; /* Ajusta la posición según la altura deseada */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #004080;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.video-image {
+    width: 100%;
+    border: 5px solid #004080; /* Borde alrededor de la imagen */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
 
 .funcionalidad_class video {
     display: block;
