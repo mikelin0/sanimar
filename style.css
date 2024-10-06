@@ -245,7 +245,12 @@ footer {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
-
+.nosotros_class video {
+    display: block;
+    margin: 20px auto; /* Centra el video horizontalmente */
+    border: 2px solid #004080; /* Añade un borde azul marino */
+    border-radius: 10px; /* Bordes redondeados */
+}
 
 .funcionalidad_class video {
     display: block;
