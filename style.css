@@ -3,6 +3,27 @@
     box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho total */
 }
 
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Ajusta la fuente para pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 12px; /* Ajusta la fuente para pantallas pequeñas */
+    }
+
+    .hero .btn {
+        font-size: 1rem; /* Ajusta el tamaño del botón para pantallas pequeñas */
+    }
+}
+
+
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
