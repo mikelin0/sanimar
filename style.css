@@ -1,29 +1,7 @@
-
 /* Estilos generales */
 * {
     box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho total */
 }
-
-
-
-@media (max-width: 768px) {
-    body {
-        font-size: 14px; /* Ajusta la fuente para pantallas medianas */
-    }
-}
-
-@media (max-width: 480px) {
-    body {
-        font-size: 12px; /* Ajusta la fuente para pantallas pequeñas */
-    }
-
-    .hero .btn {
-        font-size: 1rem; /* Ajusta el tamaño del botón para pantallas pequeñas */
-    }
-}
-
-
-
 
 body {
     font-family: Arial, sans-serif;
@@ -532,54 +510,4 @@ iframe {
     height: 300px;
     border-radius: 10px;
     margin-top: 20px;
-}
-
-
-
-@media (max-width: 1200px) {
-    .navbar ul {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 768px) {
-    .hero {
-        padding: 100px 20px; /* Ajusta el padding para pantallas más pequeñas */
-    }
-
-    .team-container {
-        display: grid;
-        grid-template-columns: 1fr; /* Cambia de una columna por fila */
-        gap: 20px;
-    }
-
-    .team-member {
-        margin-bottom: 30px;
-    }
-}
-
-@media (max-width: 480px) {
-    .logo img {
-        width: 40px; /* Ajusta el tamaño del logo en pantallas pequeñas */
-    }
-
-    .hero h2 {
-        font-size: 3rem; /* Reduce el tamaño del texto principal en la sección hero */
-    }
-
-    .navbar ul {
-        flex-direction: column;
-    }
-
-    .navbar ul li {
-        margin: 10px 0; /* Añade espacio vertical entre los elementos del menú */
-    }
-
-    .contact-form input, .contact-form textarea {
-        width: 100%; /* Asegura que el formulario de contacto se ajuste al ancho del contenedor */
-    }
-}
-    .contact-form input, .contact-form textarea {
-        width: 100%; /* Asegura que el formulario de contacto se ajuste al ancho del contenedor */
-    }
 }
